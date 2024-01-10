@@ -45,15 +45,28 @@ body {
 }
 
 .slot.green {
-    background-color: #4caf50;
+    background-color: #29e07d;
 }
 
-.panel-title {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #ffffff;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+.slot.red {
+    background-color: rgba(236, 54, 54, 0.61);
 }
+
+.slot.yellow {
+    background-color: #fff08c;
+}
+
+
+.panel-title {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: #ffffff;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+/*Posar caixeta per poder escriure i enviar paraula*/
+/*Si la paraula no existeix (enllaçar amb el diccionari) o té més de 5 lletres posar advertència de que no es pot fer*/
+/*Posar botó per que quan completis una paraula te deixi fer una altra paraula*/
+/*Crear finestra per les pistes i posar un màxim de pistes (3 pentura) i si les supera o acabar el joc o dir que no en té pus
