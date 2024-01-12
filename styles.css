@@ -66,7 +66,9 @@ body {
         left: 0;
         width: 100%;
     }
-/*Posar caixeta per poder escriure i enviar paraula*/
-/*Si la paraula no existeix (enllaçar amb el diccionari) o té més de 5 lletres posar advertència de que no es pot fer*/
-/*Posar botó per que quan completis una paraula te deixi fer una altra paraula*/
-/*Crear finestra per les pistes i posar un màxim de pistes (3 pentura) i si les supera o acabar el joc o dir que no en té pus
+/* TODO Posar caixeta per poder escriure i enviar paraula
+/* TODO Si la paraula no existeix (enllaçar amb el diccionari) o té més de 5 lletres posar advertència de que no es pot fer*/
+/* TODO Posar botó per que quan completis una paraula te deixi fer una altra paraula*/
+/* TODO Crear finestra per les pistes i posar un màxim de pistes (3 pentura) i si les supera o acabar el joc o dir que no en té pus*/
+/* TODO Donar forma i colocar correctament la casella d'escriure la paraula*/
+/* TODO Cercar com i posar teclat per tenir dues opcions per escriure, posant de colors les lletres depenguent de la paraula*/
