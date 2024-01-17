@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="paraulogic.js"></script>
+
     <title>La praula del dia</title>
 </head>
 <body>
 <div class="title">La paraula del dia</div>
 
     <input type="text" id="resposta"/>
-    <button class="score-button" onclick="llegirParaula">Enviar</button>
+    <button class="score-button" onclick="llegirParaula()">Enviar</button>
     <div id="paraula"> </div>
     <p id="respostes"></p>
 
 <div class="respostes">
-    <div class="resposta">
+    <div class="resposta" id="solucions"/>
         <div class="slot green">P</div>
         <div class="slot">A</div>
         <div class="slot yellow">R</div>

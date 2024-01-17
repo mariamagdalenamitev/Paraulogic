@@ -1,13 +1,18 @@
-let paraula
+const secreta= 'PAPER'
+
 function llegirParaula(){
-    document.getElementById()
-}
+    let paraula=document.getElementById('solucions').value.toUpperCase()
+console.log(paraula)
 
-let paraula
-let lletra
+    if (paraula===secreta){
+        window.alert('Has guanyat!')
+        document.getElementById()
+    }
+    //(paraula.length===secreta.lenght)
 
-function comprovarLletra(paraula, lletra){
-    document.getElementById(paraula.includes(lletra)).innerHTML
+    /*function comprovarLletra(paraula, lletra){
+    document.getElementById(paraula.includes(lletra)).innerHTML*/
 }
 
 //Si per exemple una paraula té tres "a" i una està ben col·locada però les altres dues no, aquestes dues no se pinten de groc
+
