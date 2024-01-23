@@ -1,37 +1,47 @@
 const secreta= 'PAPER'
 
-function llegirParaula(){
-    let paraula=document.getElementById('solucions').value.toUpperCase()
-console.log(paraula)
+function llegirParaula() {
+    let paraula = document.getElementById('resposta').value.toUpperCase()
+    console.log(paraula);
 
-    if (paraula===secreta){
+    if (paraula === secreta) {
         window.alert('Has guanyat!')
-        document.getElementById()
+        //programar que primer pinti la paraula i després posi el missatge
     }
-let secreta= 'i';
 
-novaEntrada= ' ';
-novaEntrada=<div class="slot"></div>
+    novaEntrada = '';
 
-    if (paraula.length===secreta.lenght){
-        for (let i = 0; i<5; i++){
-            document.getElementById('solucions')
-            //fer un chartAt per cada lletra (lletra per lletra) i després afegir-li la nova entrada
+
+    if (paraula.length === secreta.length) {
+        for (let i = 0; i < 5; i++) {
+            if (secreta.charAt(i) === paraula.charAt(i)) {
+                novaEntrada += '<div class="slot green">'
+                novaEntrada += paraula.charAt(i)
+                novaEntrada += '</div>'
+            } else if (secreta.includes(paraula.charAt(i)) === true) {
+                novaEntrada += '<div class="slot yellow">'
+                novaEntrada += paraula.charAt(i)
+                novaEntrada += '</div>'
+            } else {
+                novaEntrada += '<div class="slot">'
+                novaEntrada += paraula.charAt(i)
+                novaEntrada += '</div>'
+            }
+
         }
-    }else{
-        window.alert('La paraula no té la mida correcta')
-        document.getElementById()
-    }
+        document.getElementById('solucions').innerHTML = novaEntrada;
 
+    } else {
+        window.alert('La paraula no té la mida correcta')
+    }
+}
+/*function keyboard() {
+    lletraQ = Q  lletraW = W  lletraE = E  lletraR = R  lletraT = T  lletraY = Y  lletraU = U  lletraI = I
+    lletraO = O  lletraP = P  lletraA = A  lletraS = S  lletraD = D  lletraF = F  lletraG = G  lletraH = H
+    lletraJ = J  lletraK = K  lletraL = L  lletraÑ = Ñ  lletraÇ = Ç  lletraZ = Z  lletraX = X  lletraC = C
+    lletraV = V  lletraB = B  lletraN = N  lletraM = M
+
+    document.getElementById('lletres').innerHTML = teclat
+}*/
     /*function comprovarLletra(paraula, lletra){
     document.getElementById(paraula.includes(lletra)).innerHTML*/
-}
-
-//Si per exemple una paraula té tres "a" i una està ben col·locada però les altres dues no, aquestes dues no se pinten de groc
-//Fer un for per pintar les lletres amb "div"
-
-/*function posicioCaracter(paraula,lletra){
-    console.log(paraula.charAt(lletra))
-}
-posicioCaracter('Jaume',2); //u
-posicioCaracter('Ensaïmada',5) //m */
