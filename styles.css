@@ -66,6 +66,17 @@ body {
         left: 0;
         width: 100%;
     }
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+button {
+    padding: 10px;
+    font-size: 16px;
+}
 /* TODO Posar caixeta per poder escriure i enviar paraula
 /* TODO Si la paraula no existeix (enllaçar amb el diccionari) o té més de 5 lletres posar advertència de que no es pot fer*/
 /* TODO Posar botó per que quan completis una paraula te deixi fer una altra paraula*/

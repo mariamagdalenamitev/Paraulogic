@@ -27,8 +27,32 @@
 </div>
 <!--<div class="period-container text-center">
     <div id="period" class="period-number">1</div>-->
-    <div class="teclat" id="lletres">
-<br>
+<div id="keyboard">
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const teclat = document.getElementById('keyboard');
+        const lletres = [
+            'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P',
+            'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Ñ', 'Ç',
+            'Z', 'X', 'C', 'V', 'B', 'N', 'M'
+        ];
+
+        lletres.forEach(lletres => {
+            const button = document.createElement('button');
+            button.textContent = lletres;
+            button, addEventListener('click', () => teclaPolsada(lletres));
+            teclat.appendChild(button);
+        })
+
+        function teclaPolsada(lletres) {
+            alert(`tecla polsada: ${key}`);
+        }
+    });
+
+</script>
+</div>
+
+<!--<br>
     <button class="teclat" onclick="lletraQ()">Q</button>
     <button class="teclat" onclick="lletraW()">W</button>
     <button class="teclat" onclick="lletraE()">E</button>
@@ -61,7 +85,7 @@
     <button class="teclat" onclick="lletraB()">B</button>
     <button class="teclat" onclick="lletraN()">N</button>
     <button class="teclat" onclick="lletraM()">M</button>
-</br>
+</br>-->
 </div>
     <div class="panel-title">Pista</div>
 </body>

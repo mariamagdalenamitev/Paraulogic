@@ -35,6 +35,7 @@ function llegirParaula() {
         window.alert('La paraula no té la mida correcta')
     }
 }
+
 /*function keyboard() {
     lletraQ = Q  lletraW = W  lletraE = E  lletraR = R  lletraT = T  lletraY = Y  lletraU = U  lletraI = I
     lletraO = O  lletraP = P  lletraA = A  lletraS = S  lletraD = D  lletraF = F  lletraG = G  lletraH = H
