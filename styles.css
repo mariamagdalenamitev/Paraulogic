@@ -77,7 +77,6 @@ button {
     padding: 10px;
     font-size: 16px;
 }
-/* TODO Posar caixeta per poder escriure i enviar paraula
 /* TODO Si la paraula no existeix (enllaçar amb el diccionari) o té més de 5 lletres posar advertència de que no es pot fer*/
 /* TODO Posar botó per que quan completis una paraula te deixi fer una altra paraula*/
 /* TODO Crear finestra per les pistes i posar un màxim de pistes (3 pentura) i si les supera o acabar el joc o dir que no en té pus*/

@@ -18,11 +18,13 @@
 
 <div class="respostes">
     <div class="resposta" id="solucions">
-<!--        <div class="slot">P</div>
-        <div class="slot">A</div>
-        <div class="slot">R</div>
-        <div class="slot">A</div>
-        <div class="slot">U</div>-->
+        <div class="solucio">
+<!--        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>-->
+        </div>
     </div>
 </div>
 <!--<div class="period-container text-center">
@@ -32,20 +34,20 @@
     document.addEventListener('DOMContentLoaded', function () {
         const teclat = document.getElementById('keyboard');
         const lletres = [
-            'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P',
+               'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P',
             'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Ñ', 'Ç',
-            'Z', 'X', 'C', 'V', 'B', 'N', 'M'
+                      'Z', 'X', 'C', 'V', 'B', 'N', 'M'
         ];
 
         lletres.forEach(lletres => {
             const button = document.createElement('button');
             button.textContent = lletres;
-            button, addEventListener('click', () => teclaPolsada(lletres));
+            button.addEventListener('click', () => teclaPolsada(lletres));
             teclat.appendChild(button);
         })
 
-        function teclaPolsada(lletres) {
-            alert(`tecla polsada: ${key}`);
+        function teclaPolsada(key) {
+            document.getElementById('resposta').innerText = key + lletres
         }
     });
 
@@ -90,5 +92,3 @@
     <div class="panel-title">Pista</div>
 </body>
 </html>
-<!--Cercar com crear la caixeta per escriure la paraula-->
-

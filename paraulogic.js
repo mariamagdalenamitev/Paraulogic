@@ -5,13 +5,11 @@ function llegirParaula() {
     console.log(paraula);
 
     if (paraula === secreta) {
-        window.alert('Has guanyat!')
-        //programar que primer pinti la paraula i després posi el missatge
+        window.alert('Has guanyat!');
+        //TODO programar que primer pinti la paraula i després posi el missatge
     }
 
     novaEntrada = '';
-
-
     if (paraula.length === secreta.length) {
         for (let i = 0; i < 5; i++) {
             if (secreta.charAt(i) === paraula.charAt(i)) {
@@ -27,12 +25,10 @@ function llegirParaula() {
                 novaEntrada += paraula.charAt(i)
                 novaEntrada += '</div>'
             }
-
         }
         document.getElementById('solucions').innerHTML = novaEntrada;
-
     } else {
-        window.alert('La paraula no té la mida correcta')
+        window.alert('La paraula no té la mida correcta');
     }
 }
 
@@ -46,3 +42,7 @@ function llegirParaula() {
 }*/
     /*function comprovarLletra(paraula, lletra){
     document.getElementById(paraula.includes(lletra)).innerHTML*/
+//TODO només necessit una a, que no me pinti les demes
+//TODO que no substituesqui la paraula escrita, que fassi una fila nova
+//TODO programar tecla intro
+//TODO programar que me pinti les lletres del teclat a dins el requadre de la paraula, i a poder ser que me pinti les lletres
