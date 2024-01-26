@@ -78,8 +78,5 @@ button {
     font-size: 16px;
 }
 /* TODO Si la paraula no existeix (enllaçar amb el diccionari) o té més de 5 lletres posar advertència de que no es pot fer*/
-/* TODO Posar botó per que quan completis una paraula te deixi fer una altra paraula*/
-/* TODO Crear finestra per les pistes i posar un màxim de pistes (3 pentura) i si les supera o acabar el joc o dir que no en té pus*/
 /* TODO Donar forma i colocar correctament la casella d'escriure la paraula*/
-/* TODO Cercar com i posar teclat per tenir dues opcions per escriure, posant de colors les lletres depenguent de la paraula*/
 /*TODO Posar que quan he trobat la paraula secreta no deixi seguir amb la paraula*/
