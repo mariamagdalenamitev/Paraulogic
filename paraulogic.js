@@ -1,5 +1,6 @@
-const secreta= 'PAPER'
-
+//Agafar paraula aleatoria de la llista
+let paraules = ['VIURE','TENDA','JUGAR','SEURE','COMPRA','PAPER'];
+let secreta =
 function llegirParaula() {
     let paraula = document.getElementById('resposta').value.toUpperCase()
     console.log(paraula);
@@ -34,6 +35,9 @@ function llegirParaula() {
 function imatgePista(){
     window.alert('La paraula té ' + secreta.length + ' lletres i lhas descriure en català');
 }
+ if (secreta===true){
+     //En adivinar paraula que me canvii aleatoriament la parauld
+ }
 
 //TODO només necessit una a, que no me pinti les demes(Només si me sobra temps)
 //TODO programar tecla intro
