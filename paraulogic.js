@@ -1,7 +1,6 @@
 //Agafar paraula aleatoria de la llista
-let secreta='PAPER'
-//let paraules = ['VIURE','TENDA','JUGAR','SEURE','COMPRA','PAPER'];
-//let secreta =paraules[Math.trunc(paraules.Math.random()*paraules.length)]
+let paraules = ['VIURE','TENDA','JUGAR','SEURE','COMPRA','PAPER'];
+let secreta =paraules[Math.trunc(Math.random()*paraules.length)]
 function llegirParaula() {
     let paraula = document.getElementById('resposta').value.toUpperCase()
     console.log(paraula);
@@ -24,7 +23,7 @@ function llegirParaula() {
             }
         }
         if (paraula === secreta) {
-            window.alert('Has guanyat!');
+            window.alert('Has guanyat! Si vols tornar a jugar, reinicia la pàgina');
             document.getElementById('botoEnviar').disabled=true
         }
         novaEntrada+="</div>"
@@ -37,9 +36,6 @@ function llegirParaula() {
 function imatgePista(){
     window.alert('La paraula té ' + secreta.length + ' lletres i lhas descriure en català');
 }
- if (secreta===true){
-     //En adivinar paraula que me canvii aleatoriament la parauld
- }
 
 //TODO programar tecla intro
 //TODO escriure número d'intents

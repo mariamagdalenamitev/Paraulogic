@@ -29,7 +29,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
 .slot {
@@ -77,6 +76,7 @@ button {
     padding: 10px;
     font-size: 16px;
 }
+/*
 #botoEnviar{
     text-align: end;
     padding: 10px;
@@ -85,6 +85,6 @@ button {
     bottom: 20px;
     right: 20px;
 }
+*/
 
 /* TODO Donar forma i colocar correctament la casella d'escriure la paraula*/
-/*TODO Posar que quan he trobat la paraula secreta no deixi seguir amb la paraula*/
