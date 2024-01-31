@@ -1,6 +1,7 @@
 //Agafar paraula aleatoria de la llista
-let paraules = ['VIURE','TENDA','JUGAR','SEURE','COMPRA','PAPER'];
-let secreta =
+let secreta='PAPER'
+//let paraules = ['VIURE','TENDA','JUGAR','SEURE','COMPRA','PAPER'];
+//let secreta =paraules[Math.trunc(paraules.Math.random()*paraules.length)]
 function llegirParaula() {
     let paraula = document.getElementById('resposta').value.toUpperCase()
     console.log(paraula);
@@ -24,6 +25,7 @@ function llegirParaula() {
         }
         if (paraula === secreta) {
             window.alert('Has guanyat!');
+            document.getElementById('botoEnviar').disabled=true
         }
         novaEntrada+="</div>"
         document.getElementById('solucions').innerHTML += novaEntrada;
@@ -39,6 +41,5 @@ function imatgePista(){
      //En adivinar paraula que me canvii aleatoriament la parauld
  }
 
-//TODO només necessit una a, que no me pinti les demes(Només si me sobra temps)
 //TODO programar tecla intro
-//TODO programar que me pinti les lletres del teclat a dins el requadre de la paraula, i a poder ser que me pinti les lletres
+//TODO escriure número d'intents

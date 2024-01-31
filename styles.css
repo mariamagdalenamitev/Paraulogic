@@ -24,7 +24,7 @@ body {
     background-color: #f0f0f0;
 }
 
-.resposta {
+#resposta{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -77,6 +77,14 @@ button {
     padding: 10px;
     font-size: 16px;
 }
-/* TODO Si la paraula no existeix (enllaçar amb el diccionari) o té més de 5 lletres posar advertència de que no es pot fer*/
+#botoEnviar{
+    text-align: end;
+    padding: 10px;
+    background-color: #333;
+    color: #ffffff;
+    bottom: 20px;
+    right: 20px;
+}
+
 /* TODO Donar forma i colocar correctament la casella d'escriure la paraula*/
 /*TODO Posar que quan he trobat la paraula secreta no deixi seguir amb la paraula*/
