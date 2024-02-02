@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">;
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">;
-    <link rel="stylesheet" href="styles.css">;
-    <script src="paraulogic.js"></script>;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="paraulogic.js"></script>
 
-    <title>La paraula del dia</title>;
+    <title>La paraula del dia</title>
 </head>
 <body>
-<div class="title">La paraula del dia</div>;
+<div class="title">La paraula del dia</div>
 
-    <input type="text" id="resposta"/>;
-    <button class="score-button" onclick="llegirParaula()" id="botoEnviar">Enviar</button>;
-    <div id="paraula"> </div>;
-    <p id="respostes"></p>;
+    <input type="text" id="resposta"/>
+    <button class="score-button" onclick="llegirParaula()" id="botoEnviar">Enviar</button>
+    <div id="paraula"> </div>
+    <p id="respostes"></p>
 
-<div class="respostes" id="solucions">;
+<div class="respostes" id="solucions">
     <!--   <div class="resposta" >
           <div class="solucio">
      <div class="slot"></div>
@@ -27,30 +27,30 @@
 </div>
 <!--<div class="period-container text-center">
     <div id="period" class="period-number">1</div>-->
-<div id="keyboard">;
+<div id="keyboard">
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const teclat = document.getElementById('keyboard');
+        const teclat = document.getElementById('keyboard')
         const lletres = [
                'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P',
                'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Ç',
-                      'Z', 'X', 'C', 'V', 'B', 'N', 'M'
-        ];
+            'Z', 'X', 'C', 'V', 'B', 'N', 'M'
+        ]
 
         lletres.forEach(lletres => {
-            const button = document.createElement('button');
-            button.textContent = lletres;
-            button.addEventListener('click', () => teclaPolsada(lletres));
-            teclat.appendChild(button);
-        });
+            const button = document.createElement('button')
+            button.textContent = lletres
+            button.addEventListener('click', () => teclaPolsada(lletres))
+            teclat.appendChild(button)
+        })
 
         function teclaPolsada(key) {
             document.getElementById('resposta').value += key
         }
-    });
+    })
 
 </script>
 </div>
-<button class="score-button" id="pista" onclick="imatgePista()"> <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7gIehpZ3cWkTl03UdShwUzpg9hmbdnztzZVIEar57-bryunHfW-oJCJ66Y0tabm7NsA8&usqp=CAU" alt="HTML tutorial" style="width:75px;height:75px;"></button>;
+<button class="score-button" id="pista" onclick="imatgePista()"> <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7gIehpZ3cWkTl03UdShwUzpg9hmbdnztzZVIEar57-bryunHfW-oJCJ66Y0tabm7NsA8&usqp=CAU" alt="HTML tutorial" style="width:75px;height:75px;"></button>
 </body>
 </html>

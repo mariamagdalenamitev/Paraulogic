@@ -5,21 +5,22 @@ let secreta =paraules[Math.trunc(Math.random()*paraules.length)];
 function llegirParaula() {
     let paraula = document.getElementById('resposta').value.toUpperCase()
     console.log(paraula);
-    novaEntrada = '<div class="resposta" >';
+    novaEntrada = '<div class="resposta" >'
+    //Amb aquest for cercam si les lletres que escrivim es troben en la secreta i les pinta del color corresponent
     if (paraula.length === secreta.length) {
         for (let i = 0; i < 5; i++) {
             if (secreta.charAt(i) === paraula.charAt(i)) {
-                novaEntrada += '<div class="slot green">';
-                novaEntrada += paraula.charAt(i);
-                novaEntrada += '</div>';
+                novaEntrada += '<div class="slot green">'
+                novaEntrada += paraula.charAt(i)
+                novaEntrada += '</div>'
             } else if (secreta.includes(paraula.charAt(i)) === true) {
-                novaEntrada += '<div class="slot yellow">';
-                novaEntrada += paraula.charAt(i);
-                novaEntrada += '</div>';
+                novaEntrada += '<div class="slot yellow">'
+                novaEntrada += paraula.charAt(i)
+                novaEntrada += '</div>'
             } else {
-                novaEntrada += '<div class="slot">';
-                novaEntrada += paraula.charAt(i);
-                novaEntrada += '</div>';
+                novaEntrada += '<div class="slot">'
+                novaEntrada += paraula.charAt(i)
+                novaEntrada += '</div>'
             }
         }
         if (paraula === secreta) {

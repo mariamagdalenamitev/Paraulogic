@@ -7,7 +7,7 @@ body {
 .title {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #e7a2a2;
     color: #ffffff;
     bottom: 0;
     left: 0;
@@ -60,7 +60,7 @@ body {
 .panel-title {
         text-align: center;
         padding: 10px;
-        background-color: #333;
+        background-color: #eadab3;
         color: #ffffff;
         bottom: 0;
         left: 0;
@@ -87,11 +87,15 @@ button {
     grid-template: revert;
     text-align: end;
     padding: 10px;
-    background-color: #333;
+    background-color: #e74343;
     color: #ffffff;
     bottom: 20px;
     right: 20px;
 }
+#pista{
+    color: #ffffff;
+    background-color: #ffffff;
 
+}
 
 /* TODO Donar forma i colocar correctament la casella d'escriure la paraula*/
