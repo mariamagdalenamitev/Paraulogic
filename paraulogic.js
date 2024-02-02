@@ -1,5 +1,5 @@
 //Agafar paraula aleatoria de la llista
-let paraules = ['VIURE','TENDA','JUGAR','SEURE','COMPRA','PAPER'];
+let paraules = ['VIURE','TENDA','JUGAR','SEURE','PAPER'];
 let secreta =paraules[Math.trunc(Math.random()*paraules.length)]
 function llegirParaula() {
     let paraula = document.getElementById('resposta').value.toUpperCase()
@@ -36,6 +36,3 @@ function llegirParaula() {
 function imatgePista(){
     window.alert('La paraula té ' + secreta.length + ' lletres i lhas descriure en català');
 }
-
-//TODO programar tecla intro
-//TODO escriure número d'intents

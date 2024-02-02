@@ -20,15 +20,16 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 600px;
     background-color: #f0f0f0;
 }
 
-#resposta{
+.resposta{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
 }
 
 .slot {
@@ -65,19 +66,25 @@ body {
         left: 0;
         width: 100%;
     }
-#keyboard {
+
+#keyboard{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    gap: 5px;
-    max-width: 400px;
-    margin: 20px auto;
+    gap: 10px;
+    max-width:min-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 8px;
+
 }
+
 button {
     padding: 10px;
     font-size: 16px;
 }
-/*
+
 #botoEnviar{
+    grid-template: revert;
     text-align: end;
     padding: 10px;
     background-color: #333;
@@ -85,7 +92,6 @@ button {
     bottom: 20px;
     right: 20px;
 }
-*/
 
 
 /* TODO Donar forma i colocar correctament la casella d'escriure la paraula*/
